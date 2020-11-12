@@ -90,7 +90,7 @@ Deprecation of cluster stats endpoints
 
 Starting with v4.0, the cluster stats endpoints are deprecated and will be removed in a future version. Those include:
 
-- ``/system/cluster/stats`
+- ``/system/cluster/stats``
 - ``/system/cluster/stats/elasticsearch``
 - ``/system/cluster/stats/mongo``
 
