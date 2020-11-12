@@ -1,3 +1,5 @@
+/// <reference types="jest-enzyme" />
+
 import jQuery from 'jquery';
 import sizeMe from 'react-sizeme';
 
