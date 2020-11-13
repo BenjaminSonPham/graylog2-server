@@ -27,7 +27,7 @@ type Props = {
   },
 };
 
-const DateInputWithPicker = ({ disabled = false, error, value, onChange, name, title, initialDateTimeObject }: Props) => {
+const DateInputWithPicker = ({ disabled = false, error, fromDate, value, onChange, name, title, initialDateTimeObject }: Props) => {
   const inputRef = useRef({ input: { value } });
 
   const _onDatePicked = (date) => {
@@ -77,7 +77,8 @@ const DateInputWithPicker = ({ disabled = false, error, value, onChange, name, t
                   disabled={disabled}
                   title={title}
                   date={value}
-                  onChange={_onDatePicked} />
+                  onChange={_onDatePicked}
+                  fromDate={fromDate} />
     </div>
   );
 };
